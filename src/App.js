@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+import Main from './components/Main';
+import Profile from './components/Profile';
+import DiveSites from './components/DiveSites/DiveSites';
+import NotFound from './components/NotFound';
+import Callback from './components/Callback';
+
+import {
+  Route,
+  Switch,
+  Link
+} from "react-router-dom";
+
+
+
+class App extends Component {
+
+
+  render(){
+
+    return (
+      <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <p>Welcome to  ScubaBook {this.props.name} </p>
       </header>
-    </div>
-  );
+      <nav>
+      <Link to="/">Home</Link>
+      <Link to="/profile">Profile</Link>
+      <Link to="/divesites">Dive Sites</Link>
+      </nav>
+
+      <div>
+      <Switch>
+      <Route path="/" exact render={(props)=> <Main {...this.props}/> }/>
+      <Route path="/callback" exact component={Callback} />
+      <Route path="/profile"  render={(props)=> this.props.auth.isAuthenticated() ? <Profile {...this.props} /> : <NotFound {...this.props} />} />
+      <Route path="/divesites"  render={(props)=> this.props.auth.isAuthenticated() ? <DiveSites {...this.props} /> : <NotFound {...this.props} />} />
+
+      </Switch>
+      </div>
+
+
+      </div>
+    );
+  }
 }
 
 export default App;
