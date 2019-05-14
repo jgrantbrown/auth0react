@@ -8,12 +8,12 @@ nav{
   margin: 5px;
 }
 
-/* a:link {
+a:link {
     text-decoration: none;
-} */
+}
 
 a:visited {
-    color: blue;
+    text-decoration: none;
 }
 
 a:hover {

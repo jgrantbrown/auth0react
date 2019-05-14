@@ -8,7 +8,7 @@ class Profile extends Component {
     let profileData = this.props.auth.getProfile();
   return (
     <div>
-       <button onClick={this.props.auth.logout}>Logout</button>
+       
       <p>{profileData.name}</p>
       <img src={profileData.picture} alt="profile"/>
         <p> LIst of Previous Dives</p>

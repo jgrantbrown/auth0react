@@ -22,13 +22,19 @@ class DiveForm extends Component {
 
   render() {
     return (
+      <div className="formPage"> Dive Details:
       <form onSubmit={this.handleSubmit}>
-        <label>
+
+        <div><label>
           Name:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
+        </label></div>
+
+        <p>Add other items here. Need to adjust handle change and handle submit to be dynamic</p>
+
         <input type="submit" value="Submit" />
       </form>
+      </div>
     );
   }
 }

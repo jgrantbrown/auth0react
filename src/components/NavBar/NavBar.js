@@ -11,6 +11,18 @@ class NavBar extends Component {
       <NavLink className="navItem" to="/">Home</NavLink>
       <NavLink className="navItem" to="/profile">Profile</NavLink>
       <NavLink className="navItem" to="/divesites">Dive Sites</NavLink>
+      { !this.props.auth.isAuthenticated() &&
+        <div>
+          <hr/>Please login first
+          <hr/>
+          <button onClick={this.props.auth.login}> Login </button>
+        </div>
+      }
+      { this.props.auth.isAuthenticated() &&
+        <div>
+          <button onClick={this.props.auth.logout}> Logout </button>
+        </div>
+      }
       </nav>
     );
   }

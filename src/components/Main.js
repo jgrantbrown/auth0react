@@ -8,21 +8,6 @@ class Main extends Component {
     <div>
       <p>Here is a blurb about this site. Track your dives and explore new divesites
       </p>
-
-      { !this.props.auth.isAuthenticated() &&
-        <div>
-          <hr/>Please login first
-          <hr/>
-          <button onClick={this.props.auth.login}> Login </button>
-        </div>
-      }
-      { this.props.auth.isAuthenticated() &&
-        <div>
-          <button onClick={this.props.auth.logout}> Logout </button>
-        </div>
-      }
-
-
     </div>
   );
 }

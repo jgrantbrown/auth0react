@@ -11,8 +11,7 @@ import DiveForm from './components/DiveForm/DiveForm';
 
 import {
   Route,
-  Switch,
-  Link
+  Switch
 } from "react-router-dom";
 
 
@@ -27,7 +26,7 @@ class App extends Component {
       <header className="App-header">
       <p>Welcome to  ScubaBook {this.props.name} </p>
       </header>
-        <NavBar />
+        <NavBar auth={this.props.auth} />
       <div>
       <Switch>
       <Route path="/" exact render={(props)=> <Main {...this.props}/> }/>
