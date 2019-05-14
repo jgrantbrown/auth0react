@@ -1,3 +1,6 @@
+
+/* USe flexbox for cards to layou in a row */
+
 .DiveSiteCard{
   display:flex;
   flex-direction: column;

@@ -6,6 +6,7 @@ class DiveSiteCard extends Component {
     return (<div className="DiveSiteCard" key={this.props.dive.id}>
                 <p>{this.props.dive.name}  Located:{this.props.dive.location}</p>
                 <p>Description: {this.props.dive.description}</p>
+                <a href="">More details</a>
             </div>
     );
   }

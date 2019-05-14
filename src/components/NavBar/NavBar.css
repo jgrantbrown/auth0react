@@ -1,0 +1,26 @@
+nav{
+  background: lightblue;
+}
+
+.navItem{
+  text-decoration: none;
+  font-size: 30px;
+  margin: 5px;
+}
+
+/* a:link {
+    text-decoration: none;
+} */
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:active {
+    text-decoration: underline;
+}

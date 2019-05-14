@@ -6,6 +6,7 @@ import Profile from './components/Profile';
 import DiveSites from './components/DiveSites/DiveSites';
 import NotFound from './components/NotFound';
 import Callback from './components/Callback';
+import NavBar from './components/NavBar/NavBar'
 
 import {
   Route,
@@ -25,12 +26,7 @@ class App extends Component {
       <header className="App-header">
       <p>Welcome to  ScubaBook {this.props.name} </p>
       </header>
-      <nav>
-      <Link to="/">Home</Link>
-      <Link to="/profile">Profile</Link>
-      <Link to="/divesites">Dive Sites</Link>
-      </nav>
-
+        <NavBar />
       <div>
       <Switch>
       <Route path="/" exact render={(props)=> <Main {...this.props}/> }/>

@@ -6,8 +6,7 @@ class Main extends Component {
   render(){
   return (
     <div>
-      <p>Hello, {this.props.name}<br/>
-      Visit Profile Page <a href='/profile'>Click here</a>
+      <p>Here is a blurb about this site. Track your dives and explore new divesites
       </p>
 
       { !this.props.auth.isAuthenticated() &&
@@ -15,10 +14,15 @@ class Main extends Component {
           <hr/>Please login first
           <hr/>
           <button onClick={this.props.auth.login}> Login </button>
-        </div> || <div>
+        </div>
+      }
+      { this.props.auth.isAuthenticated() &&
+        <div>
           <button onClick={this.props.auth.logout}> Logout </button>
         </div>
       }
+
+
     </div>
   );
 }
