@@ -1,0 +1,9 @@
+.DiveSiteCard{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: lightblue;
+
+  margin: 10px;
+
+}
