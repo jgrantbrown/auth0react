@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 
 
 
@@ -10,7 +11,8 @@ class Profile extends Component {
        <button onClick={this.props.auth.logout}>Logout</button>
       <p>{profileData.name}</p>
       <img src={profileData.picture} alt="profile"/>
-
+        <p> LIst of Previous Dives</p>
+        <p> <Link to="/addDive">Add A Dive to Log </Link></p>
     </div>
   );
 }

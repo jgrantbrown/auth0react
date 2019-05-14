@@ -7,6 +7,7 @@ import DiveSites from './components/DiveSites/DiveSites';
 import NotFound from './components/NotFound';
 import Callback from './components/Callback';
 import NavBar from './components/NavBar/NavBar'
+import DiveForm from './components/DiveForm/DiveForm';
 
 import {
   Route,
@@ -33,6 +34,7 @@ class App extends Component {
       <Route path="/callback" exact component={Callback} />
       <Route path="/profile"  render={(props)=> this.props.auth.isAuthenticated() ? <Profile {...this.props} /> : <NotFound {...this.props} />} />
       <Route path="/divesites"  render={(props)=> this.props.auth.isAuthenticated() ? <DiveSites {...this.props} /> : <NotFound {...this.props} />} />
+      <Route path="/addDive"  render={(props)=> this.props.auth.isAuthenticated() ? <DiveForm {...this.props} /> : <NotFound {...this.props} />} />
 
       </Switch>
       </div>
