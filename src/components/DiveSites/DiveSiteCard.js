@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 
-class DiveSite extends Component {
+class DiveSiteCard extends Component {
 
   render(){
     return (<div key={this.props.dive.id}>
@@ -13,4 +13,4 @@ class DiveSite extends Component {
 }
 
 
-export default DiveSite;
+export default DiveSiteCard;
