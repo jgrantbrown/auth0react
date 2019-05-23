@@ -27,12 +27,16 @@ class DiveForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
+  // SHOULD READ UP ON AND IMPLEMNENT A DYNAMIC FOR THIS
+
+  handleChange(evt) {
+    this.setState({ [evt.target.name]: evt.target.value });
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
+    debugger
+    console.log('A name was submitted: ' + this.state);
+
     event.preventDefault();
   }
 
@@ -43,82 +47,78 @@ class DiveForm extends Component {
 
         <div><label>
           Dive NO:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="dive_no"  value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Date:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="date" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Location:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="location" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Time In:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="time_in" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Time Out:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="time_out "value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           PSI START:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="PSI_start" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           PSI END:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="PSI_end" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Weight(lbs):
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="weight_lbs" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Exposure Protection(notes):
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="exporsure_protection" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Visibility:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="visibility" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Computer:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="computer" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Tempature Air:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="tempature_air" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Tempature Surface:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="tempature_surface" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
-        <div><label>
-          Tempature Air:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label></div>
 
         <div><label>
           Tempature Bottom:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="tempature_bottom" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
         <div><label>
           Comments:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" name="comments" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
 
