@@ -5,7 +5,23 @@ class DiveForm extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {
+            dive_no: null,
+            date: "",
+            location: "",
+            time_in: "",
+            time_out: "",
+            PSI_start: null,
+            PSI_end: null,
+            weight_lbs: null,
+            exporsure_protection: "",
+            visibility: "",
+            computer: "",
+            tempature_air: "",
+            tempature_surface: "",
+            tempature_bottom: "",
+            comments: "",
+            };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,9 +42,23 @@ class DiveForm extends Component {
       <form onSubmit={this.handleSubmit}>
 
         <div><label>
-          Name:
+          Dive NO:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label></div>
+
+        <div><label>
+          Date:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Date:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+
+
+
 
         <p>Add other items here. Need to adjust handle change and handle submit to be dynamic</p>
 

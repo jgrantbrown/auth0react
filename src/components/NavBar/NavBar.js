@@ -13,8 +13,6 @@ class NavBar extends Component {
       <NavLink className="navItem" to="/divesites">Dive Sites</NavLink>
       { !this.props.auth.isAuthenticated() &&
         <div>
-          <hr/>Please login first
-          <hr/>
           <button onClick={this.props.auth.login}> Login </button>
         </div>
       }

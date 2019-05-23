@@ -18,9 +18,7 @@ import {
 
 class App extends Component {
 
-
   render(){
-
     return (
       <div className="App">
       <header className="App-header">
@@ -34,7 +32,6 @@ class App extends Component {
       <Route path="/profile"  render={(props)=> this.props.auth.isAuthenticated() ? <Profile {...this.props} /> : <NotFound {...this.props} />} />
       <Route path="/divesites"  render={(props)=> this.props.auth.isAuthenticated() ? <DiveSites {...this.props} /> : <NotFound {...this.props} />} />
       <Route path="/addDive"  render={(props)=> this.props.auth.isAuthenticated() ? <DiveForm {...this.props} /> : <NotFound {...this.props} />} />
-
       </Switch>
       </div>
 

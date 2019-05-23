@@ -29,6 +29,8 @@ export default class Auth {
     this.auth0.authorize();
   };
 
+  // look for response subkey
+
   handleAuthentication(){
       this.auth0.parseHash((err, authResults) => {
 
