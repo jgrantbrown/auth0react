@@ -52,7 +52,72 @@ class DiveForm extends Component {
         </label></div>
 
         <div><label>
-          Date:
+          Location:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Time In:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Time Out:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          PSI START:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          PSI END:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Weight(lbs):
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Exposure Protection(notes):
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Visibility:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Computer:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Tempature Air:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Tempature Surface:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Tempature Air:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Tempature Bottom:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label></div>
+
+        <div><label>
+          Comments:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label></div>
 
