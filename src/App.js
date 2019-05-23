@@ -8,6 +8,7 @@ import NotFound from './components/NotFound';
 import Callback from './components/Callback';
 import NavBar from './components/NavBar/NavBar'
 import DiveForm from './components/DiveForm/DiveForm';
+import DiveSite from './components/DiveSites/DiveSite';
 
 import {
   Route,
@@ -32,6 +33,8 @@ class App extends Component {
       <Route path="/profile"  render={(props)=> this.props.auth.isAuthenticated() ? <Profile {...this.props} /> : <NotFound {...this.props} />} />
       <Route path="/divesites"  render={(props)=> this.props.auth.isAuthenticated() ? <DiveSites {...this.props} /> : <NotFound {...this.props} />} />
       <Route path="/addDive"  render={(props)=> this.props.auth.isAuthenticated() ? <DiveForm {...this.props} /> : <NotFound {...this.props} />} />
+      <Route path="/divesite/:id"  render={(props)=> this.props.auth.isAuthenticated() ? <DiveSite {...this.props} /> : <NotFound {...this.props} />} />
+
       </Switch>
       </div>
 

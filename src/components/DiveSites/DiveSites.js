@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import DiveSiteCard from './DiveSiteCard'
 
-let divesites = [{name:"The Blue Hole", location:"Belize", description:"BLAH BLAH"},{name:"Aquarium", location: "Provenciales", description:"BLAH BLAH"}];
+let divesites = [{id: 1, name:"The Blue Hole", location:"Belize", description:"BLAH BLAH"},{id: 2 ,name:"Aquarium", location: "Provenciales", description:"BLAH BLAH"}];
 let diveInfo = divesites.map(dive=>{
-                return  <DiveSiteCard dive={dive} />
+                return  <DiveSiteCard key={dive.id} dive={dive} />
                 });
 
 class DiveSites extends Component {

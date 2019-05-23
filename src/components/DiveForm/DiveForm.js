@@ -34,7 +34,6 @@ class DiveForm extends Component {
   }
 
   handleSubmit(event) {
-    debugger
     console.log('A name was submitted: ' + this.state);
 
     event.preventDefault();

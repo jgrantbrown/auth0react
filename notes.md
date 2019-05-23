@@ -1,4 +1,7 @@
 
+Clicking on a diveistecard should render a show page of divesite details. routing is working but need to get correct data.
+
+
 
 DEfine a dive
   belongs to Profile
@@ -14,7 +17,7 @@ DEfine a dive
     Find or Add Divesite
     Divers dove with(Divemaster if so)
 
-    
+
 
 DEfine a dive site
   has_many Dives
