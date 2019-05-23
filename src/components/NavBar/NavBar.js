@@ -7,16 +7,15 @@ import "./NavBar.css"
 class NavBar extends Component {
 
   render(){
-    return (  <nav>
-      <NavLink className="navItem" to="/">Home</NavLink>
-      <NavLink className="navItem" to="/profile">Profile</NavLink>
-      <NavLink className="navItem" to="/divesites">Dive Sites</NavLink>
-    
-      { this.props.auth.isAuthenticated() &&
-        <div>
-          <button onClick={this.props.auth.logout}> Logout </button>
-        </div>
-      }
+    return (<nav>
+              <NavLink className="navItem" to="/">Home</NavLink>
+              <NavLink className="navItem" to="/profile">Profile</NavLink>
+              <NavLink className="navItem" to="/divesites">Dive Sites</NavLink>
+                { this.props.auth.isAuthenticated() &&
+                  <div >
+                    <button className="navItem" onClick={this.props.auth.logout}> Logout </button>
+                  </div>
+                }
       </nav>
     );
   }

@@ -2,10 +2,19 @@ nav{
   background: lightblue;
 }
 
+
 .navItem{
-  text-decoration: none;
   font-size: 30px;
-  margin: 5px;
+  margin: 15px;
+}
+
+.navItem:hover{
+  background-color: grey;
+  cursor: pointer;
+}
+
+.navLogout{
+  all: unset;
 }
 
 a:link {
