@@ -4,9 +4,9 @@ import "./DiveSite.css"
 class DiveSite extends Component {
 
   render(){
-    debugger
-    return (<div>
 
+    return (<div>
+                <p>Dynamicalluy pass divesite data to this render</p>
             </div>
     );
   }

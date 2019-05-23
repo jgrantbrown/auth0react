@@ -27,6 +27,7 @@ export default class Auth {
 
   login() {
     this.auth0.authorize();
+
   };
 
   // look for response subkey
