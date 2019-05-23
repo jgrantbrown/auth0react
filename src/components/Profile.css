@@ -1,0 +1,13 @@
+.diverdata{
+  margin-left: 25%;
+  position: relative;
+  border:  5px solid black;
+  width: 50vw;
+  height:50vh;
+}
+
+img{
+  border:  2px solid black;
+  float:left;
+  margin-left: 1%;
+}

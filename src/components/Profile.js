@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
-import jwtDecode from "jwt-decode";
-
+// import jwtDecode from "jwt-decode";
+import './Profile.css';
 
 class Profile extends Component {
 
@@ -19,9 +19,10 @@ class Profile extends Component {
 
   return (
     <div>
-
-      <p>{profileData.name}</p>
-      <img src={profileData.picture} alt="profile"/>
+      <div className="diverdata">
+        <p>{profileData.name}</p>
+        <img src={profileData.picture} alt="profile"/>
+      </div>
         <p> List of Previous Dives</p>
         <p> <Link to="/addDive">Add A Dive to Log </Link></p>
 
