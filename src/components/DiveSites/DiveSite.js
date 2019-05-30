@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import "./DiveSite.css"
+import {Link} from "react-router-dom";
 
 class DiveSite extends Component {
 
   render(){
-
+    debugger
     return (<div>
-                <p>Dynamicalluy pass divesite data to this render</p>
+              <p> Specfics about this Dive spot get from api and </p>
             </div>
     );
   }

@@ -1,6 +1,13 @@
 
 Clicking on a diveistecard should render a show page of divesite details. routing is working but need to get correct data.
 
+SETUP and Questions:
+API PERSISTANCE
+REDUX?
+Which local server is react and rails API using
+  CHANGED the package.json file ont Start for this port:
+      "start": "PORT=3001 react-scripts start",
+Auth0 on both front end and back end how can they communicate
 
 
 DEfine a dive
