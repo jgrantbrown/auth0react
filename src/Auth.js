@@ -34,7 +34,6 @@ export default class Auth {
 
   handleAuthentication(){
       this.auth0.parseHash((err, authResults) => {
-
         if(authResults && authResults.accessToken && authResults.idToken) {
           let expiresAt = JSON.stringify((authResults.expiresIn) * 1000 + new Date().getTime());
           localStorage.setItem("access_token", authResults.accessToken);
